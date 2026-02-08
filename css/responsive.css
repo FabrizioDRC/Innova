@@ -1,0 +1,237 @@
+/* css/responsive.css - Media queries para responsividad */
+/* Autor: INNOVA Soluções Imobiliárias */
+/* Versión: 1.0 */
+
+/* ===== TABLET (992px a 768px) ===== */
+@media (max-width: 992px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    
+    .whatsapp-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .partner-container,
+    .partner-container.reverse {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .partner-container.reverse .partner-image {
+        order: 1;
+    }
+    
+    .partner-container.reverse .partner-content {
+        order: 2;
+    }
+    
+    .partner-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .calculator-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+    
+    .banks-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .logo-main {
+        font-size: 2rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.65rem;
+        letter-spacing: 3px;
+    }
+}
+
+/* ===== MÓVIL (768px a 576px) ===== */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    
+    nav {
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        width: 100%;
+        background-color: white;
+        padding: 30px;
+        transition: var(--transition);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav.active {
+        left: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0 0 25px 0;
+    }
+
+    
+    .hero h1,
+    .hero-about h1,
+    .hero-simulate h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .partner-container {
+        margin-bottom: 80px;
+    }
+    
+    .mvv-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .calculator-container {
+        padding: 40px 30px;
+    }
+    
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo-main {
+        font-size: 1.8rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.6rem;
+        letter-spacing: 2.5px;
+    }
+    
+    .whatsapp-modal-content {
+        padding: 30px;
+    }
+    
+    .footer-logo {
+        font-size: 2rem;
+    }
+    
+    .footer-subtitle {
+        font-size: 0.65rem;
+        letter-spacing: 3px;
+    }
+}
+
+/* ===== MÓVIL PEQUEÑO (menos de 576px) ===== */
+@media (max-width: 576px) {
+    .hero,
+    .hero-about,
+    .hero-simulate {
+        padding: 140px 0 70px;
+        background-attachment: scroll;
+    }
+    
+    .hero h1,
+    .hero-about h1,
+    .hero-simulate h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .whatsapp-float {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .logo-main {
+        font-size: 1.6rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.55rem;
+        letter-spacing: 2px;
+    }
+    
+    .partner-content {
+        padding: 20px;
+    }
+    
+    .partner-feature {
+        padding: 12px;
+    }
+    
+    .partners-section:before,
+    .mission-vision-values:before,
+    .cta-about,
+    .cta-simulate:before {
+        background-attachment: scroll;
+    }
+    
+    .bank-card {
+        padding: 30px 20px;
+    }
+    
+    .calculator-title h2 {
+        font-size: 2rem;
+    }
+    
+    .footer-logo {
+        font-size: 1.8rem;
+    }
+    
+    .footer-subtitle {
+        font-size: 0.55rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* ===== MÓVIL MUY PEQUEÑO (menos de 400px) ===== */
+@media (max-width: 400px) {
+    .logo-main {
+        font-size: 1.4rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.5rem;
+        letter-spacing: 1.5px;
+    }
+    
+    .footer-logo {
+        font-size: 1.8rem;
+    }
+    
+    .footer-subtitle {
+        font-size: 0.55rem;
+        letter-spacing: 2px;
+    }
+}

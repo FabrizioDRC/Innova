@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOVA - Soluções Imobiliárias Premium</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <!-- WhatsApp Modal -->
+    <div class="whatsapp-modal" id="whatsapp-modal">
+        <div class="whatsapp-modal-content">
+            <button class="whatsapp-modal-close" id="whatsapp-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Falar com a INNOVA</h3>
+            <p>Selecione com qual de nossos sócios você deseja conversar:</p>
+            
+            <div class="whatsapp-options">
+                <a href="https://wa.me/5517988116949?text=Olá%20Michele!%20Tenho%20interesse%20nas%20soluções%20da%20INNOVA" 
+                   target="_blank" class="whatsapp-option" id="whatsapp-option-michele">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Michele</h4>
+                    <p>Consultora imobiliária especializada em negócios e atendimento personalizado</p>
+                </a>
+                
+                <a href="https://wa.me/5517981050619?text=Olá%20Fabrizio!%20Tenho%20interesse%20nas%20soluções%20da%20INNOVA" 
+                   target="_blank" class="whatsapp-option" id="whatsapp-option-fabrizio">
+                    <i class="fas fa-user-tie"></i>
+                    <h4>Fabrizio</h4>
+                    <p>Consultor imobiliário especializado em financiamentos e estratégias de investimento</p>
+                </a>
+            </div>
+            
+            <p style="margin-top: 30px; font-size: 0.9rem; color: var(--muted);">
+    
+            </p>
+        </div>
+    </div>
+
+<!-- WhatsApp Flutuante (ABRE MODAL) -->
+<div class="whatsapp-float" id="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-main">INNOVA</div>
+                <div class="logo-subtitle">SOLUÇÕES IMOBILIÁRIAS</div>
+            </a>
+            
+            <div class="mobile-menu" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#differentials">Diferenciais</a></li>
+                    <li><a href="#feedback">Depoimentos</a></li>
+                    <li><a href="simulacao.html">Simular Financiamento</a></li>
+                    <li><a href="#faq">Perguntas Frequentes</a></li>
+                </ul>
+            </nav>
+            
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Excelência em <span class="highlight">Soluções Imobiliárias</span></h1>
+                <p class="hero-subtitle">Conectamos você às melhores oportunidades imobiliárias com visão estratégica, transparência e um atendimento personalizado que transforma sonhos em realidade.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn">
+                        <i class="fas fa-building"></i> Nossos Serviços
+                    </a>
+                    <a href="quem-somos.html" class="btn btn-outline">
+                        <i class="fas fa-users"></i> Conheça Nossa História
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Completos -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços <span class="highlight">Completos</span></h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>Avaliação de Imóveis</h3>
+                    <p>Descubra o valor real do seu imóvel com análise profissional de mercado e laudo técnico especializado.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Assessoria em Documentação</h3>
+                    <p>Regularizamos escritura, registros e certidões para sua tranquilidade. Toda a burocracia resolvida por nós.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Regularização de Imóveis</h3>
+                    <p>Resolva pendências legais e deixe seu imóvel 100% regularizado para compra, venda ou financiamento.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Intermediação de Compra e Venda</h3>
+                    <p>Assessoria completa na compra ou venda do seu imóvel, desde a negociação até a assinatura final.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Apoio em Locação</h3>
+                    <p>Seleção de inquilinos confiáveis e contratos claros e seguros para proprietários e locatários.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Consultoria em Financiamento</h3>
+                    <p>Simulação e acompanhamento para conquistar o crédito imobiliário ideal com as melhores taxas do mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="differentials" id="differentials">
+        <div class="container">
+            <div class="section-title">
+                <h2>O que você ganha com nosso acompanhamento?</h2>
+            </div>
+            
+            <div class="differentials-grid">
+                <div class="differential-item">
+                    <div class="differential-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Análise Rápida e Precisa</h3>
+                    <p>Avaliamos suas possibilidades em tempo recorde com precisão técnica.</p>
+                </div>
+                
+                <div class="differential-item">
+                    <div class="differential-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Processo Sem Burocracia</h3>
+                    <p>Simplificamos toda a papelada para você focar no que realmente importa.</p>
+                </div>
+                
+                <div class="differential-item">
+                    <div class="differential-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Organização Completa</h3>
+                    <p>Toda a documentação organizada e revisada para evitar qualquer atraso.</p>
+                </div>
+                
+                <div class="differential-item">
+                    <div class="differential-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Maior Chance de Aprovação</h3>
+                    <p>Nossa experiência aumenta significativamente suas chances de sucesso.</p>
+                </div>
+                
+                <div class="differential-item">
+                    <div class="differential-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Atendimento Humanizado</h3>
+                    <p>Conversa direta, transparente e focada nas suas necessidades reais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como <span class="highlight">Funciona</span></h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Análise Inicial Gratuita</h3>
+                    <p>Ao enviar seus dados, verificamos suas possibilidades sem compromisso. Avaliação completa do seu perfil.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-folder"></i>
+                    </div>
+                    <h3>2. Documentação Organizada</h3>
+                    <p>Analisamos toda a documentação necessária para evitar atrasos e garantir que tudo está correto.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>3. Envio para Aprovação</h3>
+                    <p>Assim que o Banco aprovar seguimos com análise documental do imóvel escolhido.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3>4. Aprovação e Assinatura</h3>
+                    <p>O crédito é aprovado e seguimos com a compra do imóvel. Seu sonho realizado!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback -->
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="section-title">
+                <h2>Clientes que <span class="highlight">Confiaram na INNOVA</span></h2>
+            </div>
+            
+            <div class="feedback-box">
+                <p id="f-text">"A INNOVA transformou completamente minha experiência imobiliária. Profissionalismo, agilidade e resultados excepcionais!"</p>
+                <h4 id="f-name">Marcos Silva</h4>
+                <span id="f-role">Investidor Imobiliário</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Simular Financiamento -->
+    <section class="simulate-section" id="simulate">
+        <div class="container">
+            <div class="simulate-content">
+                <h2>Simule seu <span class="highlight">Financiamento Imobiliário</span></h2>
+                <p>Descubra as melhores condições para realizar o sonho da casa própria. Simulação rápida, sem compromisso e com as taxas mais competitivas do mercado.</p>
+                <a href="simulacao.html" class="simulate-btn">
+                    <i class="fas fa-calculator"></i> Simular Financiamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perguntas Frequentes -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dúvidas <span class="highlight">Frequentes</span></h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Existe algum custo para a análise inicial?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não. Todo o processo de acompanhamento e assessoria é 100% gratuito para o cliente. Nosso papel é orientar, organizar a documentação e acompanhar cada etapa do financiamento junto à instituição financeira.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Vocês fazem análise mesmo com restrição no nome?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Depende do tipo de restrição. Cada caso é analisado individualmente e, sempre que possível, orientamos sobre as alternativas disponíveis.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Preciso ter toda a documentação pronta para iniciar?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não. Nós orientamos sobre quais documentos são necessários e ajudamos na organização de cada etapa.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quanto tempo leva a análise do crédito?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo pode variar de acordo com o perfil e a instituição financeira, mas a análise inicial costuma ser feita de forma rápida após o envio das informações necessárias.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Ainda tem dúvidas? Entre em contato conosco!</p>
+                <a href="#" class="btn" id="faq-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Falar com Consultor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo-container">
+                    <div class="footer-logo">INNOVA</div>
+                    <div class="footer-subtitle">SOLUÇÕES IMOBILIÁRIAS</div>
+                    <div class="footer-about">
+                        <p>Soluções imobiliárias premium com mais de 15 anos de experiência no mercado. Conectamos você às melhores oportunidades com excelência, segurança e transparência.</p>
+                        <div class="footer-social">
+                            <a href="https://instagram.com/michele.ferro.consultoria" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" id="footer-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#differentials">Diferenciais</a></li>
+                        <li><a href="#feedback">Depoimentos</a></li>
+                        <li><a href="simulacao.html">Simular Financiamento</a></li>
+                        <li><a href="#faq">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fab fa-whatsapp"></i> (17) 98811-6949</p>
+                    <p><i class="fab fa-whatsapp"></i> (17) 98105-0619</p>
+                    <p><i class="fas fa-envelope"></i> innovasoluoesimobiliarias@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> R. Calixto Fauaz, 965 - Jardim Nazareth</p>
+                    <p>São José do Rio Preto - SP, 15054-050</p>
+                    <p><i class="fas fa-clock"></i> Seg-Sex: 8h às 18h</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2024 INNOVA Soluções Imobiliárias — Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/navegacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* css/main.css - Estilos principales y configuración base */
+/* Autor: INNOVA Soluções Imobiliárias */
+/* Versión: 1.0 */
+
+/* ===== RESET Y CONFIGURACIÓN GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== VARIABLES CSS ===== */
+:root {
+    /* Paleta de colores del proyecto */
+    --blue: #3bbcff;
+    --blue-light: #7FE3FF;
+    --blue-dark: #4F8DFF;
+    --purple: #5a2dff;
+    --purple-light: #8a63ff;
+    --purple-dark: #4B2DFF;
+    --text: #0f172a;
+    --muted: #64748b;
+    --bg: #ffffff;
+    --soft: #f8fafc;
+    
+    /* Gradientes */
+    --gradient: linear-gradient(to bottom, #7FE3FF, #4F8DFF, #4B2DFF);
+    --gradient-horizontal: linear-gradient(90deg, var(--blue), var(--purple));
+    --gradient-diagonal: linear-gradient(135deg, var(--blue), var(--purple));
+    --gradient-reverse: linear-gradient(135deg, var(--purple), var(--blue));
+    
+    /* Transiciones */
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --transition-slow: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    /* Tipografía */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+}
+
+/* ===== CONFIGURACIÓN DEL BODY ===== */
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+    overflow-x: hidden;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== ESTILOS DE TIPOGRAFÍA ===== */
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+/* ===== CLASES DE UTILIDAD ===== */
+.highlight {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title h2 {
+    display: inline-block;
+    color: var(--text);
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--gradient-horizontal);
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* ===== ENLACES ===== */
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* ===== RESPONSIVIDAD BASE ===== */
+@media (max-width: 1200px) {
+    h1 { font-size: 3.2rem; }
+    h2 { font-size: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2.2rem; }
+    section { padding: 80px 0; }
+}
+
+@media (max-width: 576px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    section { padding: 60px 0; }
+}
