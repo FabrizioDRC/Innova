@@ -15,16 +15,16 @@
     --blue: #3bbcff;
     --blue-light: #7FE3FF;
     --blue-dark: #4F8DFF;
-    --purple: #5a2dff;
+    --purple: #2f486c;
     --purple-light: #8a63ff;
-    --purple-dark: #4B2DFF;
-    --text: #0f172a;
+    --purple-dark: #2f486c;
+    --text: #2f486c;
     --muted: #64748b;
-    --bg: #ffffff;
-    --soft: #f8fafc;
+    --bg: #F5F0E9;
+    --soft: #F5F0E9;
     
     /* Gradientes */
-    --gradient: linear-gradient(to bottom, #7FE3FF, #4F8DFF, #4B2DFF);
+    --gradient: linear-gradient(to bottom, #7FE3FF, #4F8DFF, #2f486c); /* ALTERACION*/
     --gradient-horizontal: linear-gradient(90deg, var(--blue), var(--purple));
     --gradient-diagonal: linear-gradient(135deg, var(--blue), var(--purple));
     --gradient-reverse: linear-gradient(135deg, var(--purple), var(--blue));
