@@ -459,7 +459,7 @@ nav ul li a:hover:after {
 }
 
 .service-card {
-    background-color: var(--bg);
+    background-color: #ffff;
     padding: 50px 40px;
     transition: var(--transition);
     position: relative;
@@ -903,8 +903,10 @@ nav ul li a:hover:after {
     align-items: center;
     gap: 12px;
     padding: 15px;
-    background: var(--soft);
+    background: var(--bg);
     border-radius: 10px;
+    border-color: var(--gradient);
+    border-width: 1px;
     transition: var(--transition);
 }
 
@@ -925,8 +927,9 @@ nav ul li a:hover:after {
 }
 
 /* ===== MISSÃO, VISÃO E VALORES ===== */
+/* ===== MISSÃO, VISÃO E VALORES ===== */
 .mission-vision-values {
-    background-color: var(--soft);
+    background-color: var(--bg);
     position: relative;
     overflow: hidden;
 }
@@ -955,13 +958,14 @@ nav ul li a:hover:after {
 }
 
 .mvv-item {
-    background-color: var(--bg);
+    background-color: white;
     padding: 50px 40px;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.05);
     transform: translateY(50px);
     opacity: 0;
@@ -973,8 +977,8 @@ nav ul li a:hover:after {
 }
 
 .mvv-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .mvv-icon {
@@ -995,7 +999,7 @@ nav ul li a:hover:after {
 /* ===== CTA QUEM SOMOS ===== */
 .cta-about {
     background: 
-        linear-gradient(135deg, rgba(59, 188, 255, 0.9), rgba(90, 45, 255, 0.9)),
+        linear-gradient(--gradient),
         url('../imagens/parallax-background.jpg');
     background-size: cover;
     background-position: center;
@@ -1016,14 +1020,12 @@ nav ul li a:hover:after {
 }
 
 .cta-about h2 {
-    color: white;
+    color: var(--text);
     margin-bottom: 1.5rem;
-    opacity: 0;
-    transform: translateY(30px);
 }
 
 .cta-about p {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text);
     font-size: 1.2rem;
     margin-bottom: 3rem;
     opacity: 0;
@@ -1031,7 +1033,6 @@ nav ul li a:hover:after {
 }
 
 .cta-about-btn {
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     background: white;
@@ -1311,18 +1312,49 @@ nav ul li a:hover:after {
     z-index: 1;
 }
 
+/* ===== BENEFÍCIOS SECTION ===== */
+.benefits-section {
+    background-color: var(--soft);
+    padding: 100px 0;
+    position: relative;
+}
+
+.benefits-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../imagens/parallax-background.jpg');
+    opacity: 0.02;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
 .benefit-item {
-    background-color: var(--bg);
-    padding: 50px 40px;
-    border-radius: 20px;
+    background-color: white; /* Fondo blanco */
+    padding: 50px 40px; /* Padding igual que service-card */
+    border-radius: 20px; /* Border-radius igual */
     text-align: center;
     transition: var(--transition);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra más suave como service-card */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Borda sutil */
+    position: relative;
+    overflow: hidden; /* Para efeitos adicionais se necessário */
 }
 
 .benefit-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+    transform: translateY(-15px); /* Mesmo efeito de hover dos service-cards */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Sombra mais forte no hover */
 }
 
 .benefit-icon {
@@ -1334,9 +1366,21 @@ nav ul li a:hover:after {
     background-clip: text;
 }
 
+.benefit-item h3 {
+    font-size: 1.6rem; /* Tamanho igual aos outros cards */
+    margin-bottom: 15px; /* Espaçamento igual */
+    color: var(--text);
+}
+
+.benefit-item p {
+    color: var(--muted);
+    margin-bottom: 0; /* Remove margem inferior padrão */
+    line-height: 1.7; /* Altura de linha consistente */
+}
+
 /* ===== CTA SIMULAÇÃO ===== */
 .cta-simulate {
-    background: var(--gradient);
+    background: var(--bg);
     color: white;
     text-align: center;
     padding: 120px 0;
@@ -1365,12 +1409,12 @@ nav ul li a:hover:after {
 }
 
 .cta-simulate h2 {
-    color: white;
+    color: var(--text);
     margin-bottom: 1.5rem;
 }
 
 .cta-simulate p {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text);
     font-size: 1.2rem;
     margin-bottom: 3rem;
 }
@@ -1409,7 +1453,7 @@ footer {
 }
 
 .footer-subtitle {
-    color: var(--muted);
+    color: var(--White);
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -1418,7 +1462,7 @@ footer {
 }
 
 .footer-about p {
-    color: var(--muted);
+    color: var(--White);
     margin-bottom: 25px;
 }
 
@@ -1474,7 +1518,7 @@ footer {
 }
 
 .footer-links ul li a {
-    color: var(--muted);
+    color: var(white);
     text-decoration: none;
     transition: var(--transition);
     display: inline-block;
@@ -1486,7 +1530,7 @@ footer {
 }
 
 .footer-contact p {
-    color: var(--muted);
+    color: var(--White);
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -1502,6 +1546,6 @@ footer {
     text-align: center;
     padding-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--muted);
+    color: var(--White);
     font-size: 0.9rem;
 }

@@ -64,7 +64,6 @@ h1 {
     margin-bottom: 1.5rem;
     background: var(--gradient);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
@@ -90,7 +89,6 @@ p {
 .highlight {
     background: var(--gradient);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
